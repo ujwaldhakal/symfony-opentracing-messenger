@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  Ujwaldhakal\Messenger\EventSubscriber\SendMessageToTransportSubscriber: ~
+  Ujwaldhakal\Messenger\EventSubscriber\WorkerMessageReceivedSubscriber: ~
+  Ujwaldhakal\Messenger\EventSubscriber\WorkerMessageHandledSubscriber: ~
+  Ujwaldhakal\Messenger\Tracing\TracingInterface:
+    class: Ujwaldhakal\Messenger\Tracing\OpenTracing
