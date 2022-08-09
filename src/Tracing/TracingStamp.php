@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ujwaldhakal\Messenger\Tracing;
+namespace Ujwaldhakal\OpentracingMessengerBundle\Tracing;
 
 use Symfony\Component\Messenger\Stamp\StampInterface;
 
