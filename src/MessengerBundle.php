@@ -15,7 +15,7 @@ final class MessengerBundle extends Bundle
         return __DIR__;
     }
 
-    public function build(ContainerBuilder $container)
+    public function build(ContainerBuilder $container): void
     {
         parent::build($container); 
         $container->registerExtension(new MessengerExtension());
