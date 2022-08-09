@@ -3,8 +3,7 @@
     "description": "Bundle that helps to trace symfony messenger's async messages",
     "type": "symfony-bundle",
     "require": {
-        "php": ">=7.4",
-        "symfony/framework-bundle": "^6.0",
+        "php": ">=7.0",
         "auxmoney/opentracing-bundle-jaeger": "^v1.2.1"
     },
     "autoload": {
@@ -18,5 +17,8 @@
             "name": "Ujwal Dhakal",
             "email": "kevin.ujwal@gmail.com"
         }
-    ]
+    ],
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "v2.19.0"
+    }
 }
