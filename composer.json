@@ -1,5 +1,5 @@
 {
-    "name": "ujwaldhakal/messenger",
+    "name": "ujwaldhakal/symfony-opentracing-messenger",
     "description": "Bundle that helps to trace symfony messenger's async messages",
     "type": "symfony-bundle",
     "require": {
@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ujwaldhakal\\Messenger\\": "src/"
+            "Ujwaldhakal\\OpentracingMessengerBundle\\": "src/"
         }
     },
     "license": "MIT",
@@ -18,7 +18,5 @@
             "name": "Ujwal Dhakal",
             "email": "kevin.ujwal@gmail.com"
         }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": false
+    ]
 }

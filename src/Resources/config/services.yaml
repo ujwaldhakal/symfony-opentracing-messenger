@@ -4,8 +4,8 @@ services:
     autoconfigure: true
     public: true
 
-  Ujwaldhakal\Messenger\EventSubscriber\SendMessageToTransportSubscriber: ~
-  Ujwaldhakal\Messenger\EventSubscriber\WorkerMessageReceivedSubscriber: ~
-  Ujwaldhakal\Messenger\EventSubscriber\WorkerMessageHandledSubscriber: ~
-  Ujwaldhakal\Messenger\Tracing\TracingInterface:
-    class: Ujwaldhakal\Messenger\Tracing\OpenTracing
+  Ujwaldhakal\OpentracingMessengerBundle\EventSubscriber\SendMessageToTransportSubscriber: ~
+  Ujwaldhakal\OpentracingMessengerBundle\EventSubscriber\WorkerMessageReceivedSubscriber: ~
+  Ujwaldhakal\OpentracingMessengerBundle\EventSubscriber\WorkerMessageHandledSubscriber: ~
+  Ujwaldhakal\OpentracingMessengerBundle\Tracing\TracingInterface:
+    class: Ujwaldhakal\OpentracingMessengerBundle\Tracing\OpenTracing
