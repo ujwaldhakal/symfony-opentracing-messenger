@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ujwaldhakal\Messenger\Tracing;
+namespace Ujwaldhakal\OpentracingMessengerBundle\Tracing;
 
 use Auxmoney\OpentracingBundle\Internal\Persistence;
 use Auxmoney\OpentracingBundle\Internal\Utility;

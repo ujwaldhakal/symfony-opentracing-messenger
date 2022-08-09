@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Ujwaldhakal\Messenger\EventSubscriber;
+namespace Ujwaldhakal\OpentracingMessengerBundle\EventSubscriber;
 
-use Ujwaldhakal\Messenger\Tracing\TracingStamp;
+use Ujwaldhakal\OpentracingMessengerBundle\Tracing\TracingStamp;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Messenger\Event\SendMessageToTransportsEvent;
-use Ujwaldhakal\Messenger\Tracing\TracingInterface;
+use Ujwaldhakal\OpentracingMessengerBundle\Tracing\TracingInterface;
 
 final class SendMessageToTransportSubscriber implements EventSubscriberInterface
 {

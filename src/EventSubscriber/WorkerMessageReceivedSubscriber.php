@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Ujwaldhakal\Messenger\EventSubscriber;
+namespace Ujwaldhakal\OpentracingMessengerBundle\EventSubscriber;
 
 use Symfony\Component\Messenger\Event\WorkerMessageReceivedEvent;
-use Ujwaldhakal\Messenger\Tracing\TracingStamp;
+use Ujwaldhakal\OpentracingMessengerBundle\Tracing\TracingStamp;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Messenger\Event\SendMessageToTransportsEvent;
-use Ujwaldhakal\Messenger\Tracing\TracingInterface;
+use Ujwaldhakal\OpentracingMessengerBundle\Tracing\TracingInterface;
 
 final class WorkerMessageReceivedSubscriber implements EventSubscriberInterface
 {
@@ -25,7 +25,7 @@ final class WorkerMessageReceivedSubscriber implements EventSubscriberInterface
 
     public function onMessageReceived(WorkerMessageReceivedEvent $event)
     {
-        /** @var Ujwaldhakal\Messenger\Tracing\TracingStamp $tracingHeaders */
+        /** @var Ujwaldhakal\OpentracingMessengerBundle\Tracing\TracingStamp $tracingHeaders */
         $tracingHeaders = $event->getEnvelope()->last(TracingStamp::class);
         $name = get_class($event->getEnvelope()->getMessage());
         $this->tracing->linkParentSpan($name, $tracingHeaders->getTracingHeaders());
