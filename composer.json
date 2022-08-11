@@ -11,6 +11,11 @@
             "Ujwaldhakal\\OpentracingMessengerBundle\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Ujwaldhakal\\OpentracingMessengerBundle\\Tests\\": "tests/"
+        }
+    },
     "license": "MIT",
     "authors": [
         {
@@ -19,6 +24,8 @@
         }
     ],
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "v2.19.0"
+        "friendsofphp/php-cs-fixer": "v2.19.0",
+        "phpunit/phpunit": "^9.5",
+        "symfony/messenger": "^6.1"
     }
 }

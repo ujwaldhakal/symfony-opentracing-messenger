@@ -25,7 +25,7 @@ final class SendMessageToTransportSubscriber implements EventSubscriberInterface
     public function onMessageSentToTransport(SendMessageToTransportsEvent $event): void
     {
         if(!empty($this->tracing->getTracingHeaders())) {
-        $event->setEnvelope($event->getEnvelope()->with(new TracingStamp($this->tracing->getTracingHeaders())));
+            $event->setEnvelope($event->getEnvelope()->with(new TracingStamp($this->tracing->getTracingHeaders())));
         }
     }
 }
